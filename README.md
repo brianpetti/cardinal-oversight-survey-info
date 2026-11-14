@@ -1,0 +1,26 @@
+# Cardinal Oversight - Mentor Public Schools Community Survey
+
+Cardinal Oversight conducts an independent community feedback survey about Mentor Public Schools. It is not an official district survey.
+
+This public repository provides **survey documentation**, not the software that hosts the survey.
+
+## What you can review
+
+- [Questionnaire](QUESTIONNAIRE.md): question wording and answer choices from the November 12, 2026 source snapshot.
+- [Methodology](METHODOLOGY.md): how survey responses should be described and interpreted.
+- [Privacy and data disclosures](PRIVACY.md): what this repository does and does not contain.
+- [Public change log](CHANGELOG.md): updates to the published documents.
+
+Survey: https://survey.cardinaloversight.com
+
+## Independence and limitations
+
+Positive, negative, and mixed responses are welcome. Participation is voluntary. Survey results describe participating respondents; they are not a scientific sample of every district resident or voter. We will distinguish reported experiences and opinions from independently verified facts.
+
+The questionnaire file is a **source snapshot**, not a certified export of the currently deployed questionnaire. It has not been compared against the live survey after recent proposed changes. Until that comparison, do not treat the file as a guarantee of the exact current on-screen questions.
+
+## What is not public here
+
+This documentation-only repository contains no application source code, private configuration, hosting or deployment instructions, response data, credentials, internal infrastructure addresses, or administrator information.
+
+This repository does **not** constitute independent verification of the survey's software or data processing. Please consult the survey website's privacy notice for its current privacy practices. This public material should be updated when the questionnaire is finalized and whenever material wording changes.

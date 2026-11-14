@@ -1,0 +1,8 @@
+# Allowlist: only these reviewed public documentation files may be committed.
+*
+!/.gitignore
+!/README.md
+!/QUESTIONNAIRE.md
+!/METHODOLOGY.md
+!/PRIVACY.md
+!/CHANGELOG.md
