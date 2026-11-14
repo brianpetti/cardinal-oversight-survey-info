@@ -15,3 +15,10 @@ This entry documents this local package, not a GitHub publication or a live surv
 - Documented choice limits and conditional display rules.
 - No school board structure or eligibility reform proposals were added.
 - Historical review responses should be kept separate from final launch results.
+
+## 2026-11-13 - Review version 3
+
+- Clarified overlap between financial explanations and online access to nonfinancial records.
+- Replaced the prior general sideline question with two separate policy proposals about termination for substantiated serious misconduct.
+- Added a public aggregate results dashboard and Excel/CSV downloads, with release thresholds and small-count withholding.
+- Added a neutral completion badge, sharing controls and separate civic participation information; no signatures are collected.

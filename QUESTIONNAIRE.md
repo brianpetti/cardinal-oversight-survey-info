@@ -1,14 +1,14 @@
 # Mentor Public Schools community survey - questionnaire
 
-Question set: 2026-11-13-review2. All substantive questions are optional. The age eligibility check is required. Later sections are optional. This document describes the reviewed question set and does not independently certify the running application.
+Question set: 2026-11-13-review3. Every substantive question is optional. Review-period documentation; not an independent audit of the running software.
 
 Eligibility: Are you at least 18 years old and willing to participate? Yes, I am 18 or older / No.
 
 ## Section 1: Community snapshot
 
-The most important answers first
-
 ### 1. What is your connection to Mentor Public Schools? Select all that apply.
+
+Question ID: `connection`.
 
 Select up to 8.
 
@@ -21,11 +21,11 @@ Select up to 8.
 - Other connection
 - Prefer not to answer
 
-Select these choices only by themselves: Prefer not to answer.
+Choose alone: Prefer not to answer.
 
 ### 2. Do you currently live within Mentor Public Schools district boundaries?
 
-Select one.
+Question ID: `resident`.
 
 - Yes
 - No
@@ -34,7 +34,7 @@ Select one.
 
 ### 3. What is your age range?
 
-Select one.
+Question ID: `age`.
 
 - 18-29
 - 30-44
@@ -45,7 +45,7 @@ Select one.
 
 ### 4. Were you registered to vote in the Mentor Public Schools district for the November 3, 2026 election?
 
-Select one.
+Question ID: `registered`.
 
 - Yes
 - No
@@ -54,7 +54,7 @@ Select one.
 
 ### 5. Did you vote in the November 3, 2026 election?
 
-Select one.
+Question ID: `voted`.
 
 - Yes
 - No
@@ -62,35 +62,33 @@ Select one.
 
 ### 6. How did you vote on Mentor Public Schools Issue 5?
 
-Select one.
+Question ID: `vote_actual`.
 
 - For the levy
 - Against the levy
 - I voted but skipped Issue 5
 - Prefer not to answer
 
-Show only if the answer is for "Were you registered to vote in the Mentor Public Schools district for the November 3, 2026 election?": Yes.
-
-Show only if the answer is for "Did you vote in the November 3, 2026 election?": Yes.
+Display rules (all listed conditions must hold):
+- registered equals Yes.
+- voted equals Yes.
 
 ### 7. If you had voted on Issue 5, how would you most likely have voted?
 
-Select one.
+Question ID: `vote_hypothetical`.
 
 - For the levy
 - Against the levy
 - Undecided
 - Prefer not to answer
 
-Show only if the answer is for "Were you registered to vote in the Mentor Public Schools district for the November 3, 2026 election?": Yes.
-
-Show only if the answer is for "Did you vote in the November 3, 2026 election?": No.
+Display rules (all listed conditions must hold):
+- registered equals Yes.
+- voted equals No.
 
 ### 8. Overall, how would you rate the quality of education provided by Mentor Public Schools?
 
-Uses the same wording and response scale as the 2024 district survey.
-
-Select one.
+Question ID: `quality`.
 
 - Excellent
 - Good
@@ -98,9 +96,11 @@ Select one.
 - Poor
 - Not sure
 
+Help: Uses the same wording and response scale as the 2024 district survey.
+
 ### 9. How would you rate Craig Heath - Superintendent?
 
-Select one.
+Question ID: `leader_heath`.
 
 - 1 - Very poor
 - 2 - Poor
@@ -111,7 +111,7 @@ Select one.
 
 ### 10. How would you rate Maggie Cook - Board President?
 
-Select one.
+Question ID: `leader_cook`.
 
 - 1 - Very poor
 - 2 - Poor
@@ -122,7 +122,7 @@ Select one.
 
 ### 11. How would you rate Lauren Marchaza - Board Vice President?
 
-Select one.
+Question ID: `leader_marchaza`.
 
 - 1 - Very poor
 - 2 - Poor
@@ -133,7 +133,7 @@ Select one.
 
 ### 12. How would you rate Daniel Hardesty - Board Member?
 
-Select one.
+Question ID: `leader_hardesty`.
 
 - 1 - Very poor
 - 2 - Poor
@@ -144,7 +144,7 @@ Select one.
 
 ### 13. How would you rate Robert Haag - Board Member?
 
-Select one.
+Question ID: `leader_haag`.
 
 - 1 - Very poor
 - 2 - Poor
@@ -155,7 +155,7 @@ Select one.
 
 ### 14. Based on what you currently know, do you support or oppose the district's school consolidation plan?
 
-Select one.
+Question ID: `consolidation_support`.
 
 - Strongly oppose
 - Somewhat oppose
@@ -166,7 +166,7 @@ Select one.
 
 ### 15. How confident are you that the district thoroughly evaluated reasonable cost-cutting alternatives before proposing school closures?
 
-Select one.
+Question ID: `cost_efforts_confidence`.
 
 - 1 - No confidence
 - 2 - A little confidence
@@ -177,17 +177,17 @@ Select one.
 
 ### 16. If some school buildings must close, which grade arrangement would you prefer?
 
-Select one if you have a preference. This hypothetical question does not mean closures are inevitable. You may skip it.
-
-Select one.
+Question ID: `grade_config`.
 
 - K-5 elementary, 6-8 middle, 9-12 high school, with fewer buildings
 - K-3 elementary, 4-7 middle, 8-12 at Mentor High School
 - K-4 elementary, 5-8 middle, 9-12 at Mentor High School
 
+Help: Select one if you have a preference. This hypothetical question does not mean closures are inevitable. You may skip it.
+
 ### 17. If consolidation proceeds, how important is it that students stay with their current classmates and school communities when possible?
 
-Select one.
+Question ID: `school_community`.
 
 - 1 - Not at all important
 - 2 - Slightly important
@@ -197,6 +197,8 @@ Select one.
 - Not sure
 
 ### 18. Which schooling options currently apply to school-age children in your household? Select all that apply.
+
+Question ID: `mob_school_options`.
 
 Select up to 8.
 
@@ -209,11 +211,11 @@ Select up to 8.
 - No school-age children in household
 - Prefer not to answer
 
-Select these choices only by themselves: No school-age children in household; Prefer not to answer.
+Choose alone: No school-age children in household; Prefer not to answer.
 
 ### 19. Where did you first find this survey?
 
-Select one.
+Question ID: `discovered`.
 
 - Social Media
 - Email Outreach
@@ -224,11 +226,9 @@ Select one.
 
 ## Section 2: Consolidation and finances
 
-Alternatives, costs and the levy
+### 1. Before this survey, how familiar were you with the district's consolidation plan?
 
-### 20. Before this survey, how familiar were you with the district's consolidation plan?
-
-Select one.
+Question ID: `plan_familiar`.
 
 - Not at all familiar
 - Slightly familiar
@@ -236,18 +236,18 @@ Select one.
 - Very familiar
 - Extremely familiar
 
-### 21. Do you have enough information to form an opinion about consolidation?
+### 2. Do you have enough information to form an opinion about consolidation?
 
-Select one.
+Question ID: `plan_info`.
 
 - Yes
 - Partly
 - No
 - Not sure
 
-### 22. How satisfied are you with opportunities to provide input on consolidation decisions?
+### 3. How satisfied are you with opportunities to provide input on consolidation decisions?
 
-Select one.
+Question ID: `input_satisfaction`.
 
 - Very dissatisfied
 - Dissatisfied
@@ -257,9 +257,9 @@ Select one.
 - Not aware of opportunities
 - Not interested in providing input
 
-### 23. How confident are you that Superintendent Craig Heath has the experience and expertise needed to guide consolidation planning?
+### 4. How confident are you that Superintendent Craig Heath has the experience and expertise needed to guide consolidation planning?
 
-Select one.
+Question ID: `heath_consol`.
 
 - 1 - No confidence
 - 2 - A little confidence
@@ -268,9 +268,9 @@ Select one.
 - 5 - Complete confidence
 - Not enough information
 
-### 24. How important is independent professional guidance when evaluating consolidation proposals?
+### 5. How important is independent professional guidance when evaluating consolidation proposals?
 
-Select one.
+Question ID: `professional_review`.
 
 - 1 - Not at all important
 - 2 - Slightly important
@@ -279,9 +279,9 @@ Select one.
 - 5 - Extremely important
 - Not sure
 
-### 25. How confident are you that the Board will thoroughly evaluate the superintendent's consolidation recommendations?
+### 6. How confident are you that the Board will thoroughly evaluate the superintendent's consolidation recommendations?
 
-Select one.
+Question ID: `board_review`.
 
 - 1 - No confidence
 - 2 - A little confidence
@@ -290,9 +290,9 @@ Select one.
 - 5 - Complete confidence
 - Not enough information
 
-### 26. Do you support additional efforts to identify and publicly document cost reductions before closing buildings?
+### 7. Do you support additional efforts to identify and publicly document cost reductions before closing buildings?
 
-Select one.
+Question ID: `more_savings`.
 
 - Strongly oppose
 - Somewhat oppose
@@ -301,7 +301,9 @@ Select one.
 - Strongly support
 - Not sure
 
-### 27. Which spending or operational changes should the district examine before closing buildings? Choose up to three.
+### 8. Which spending or operational changes should the district examine before closing buildings? Choose up to three.
+
+Question ID: `savings_options`.
 
 Select up to 3.
 
@@ -317,13 +319,13 @@ Select up to 3.
 - No additional reductions should be pursued
 - Not sure
 
-Select these choices only by themselves: No additional reductions should be pursued; Not sure.
+Choose alone: No additional reductions should be pursued; Not sure.
 
-### 28. If Mentor Public Schools needed to reduce spending, which areas should be reviewed first? Select up to three in order of priority.
+### 9. If Mentor Public Schools needed to reduce spending, which areas should be reviewed first? Select up to three in order of priority.
 
-Choose your first, second and third priorities, if you have them. Do not repeat an area. Legal duties and contractual obligations may limit available cuts.
+Question ID: `bud_01`.
 
-Rank up to 3 different options in order.
+Rank up to three distinct choices in order.
 
 - Administrative employee benefits
 - Administrative staffing positions
@@ -340,11 +342,13 @@ Rank up to 3 different options in order.
 - Not enough information to choose
 - I would not support further cuts
 
-Select these choices only by themselves: Not enough information to choose; I would not support further cuts.
+Choose alone: Not enough information to choose; I would not support further cuts.
 
-### 29. If spending reductions were considered, which areas would you most want the district to protect? Choose up to three.
+Help: Choose your first, second and third priorities, if you have them. Do not repeat an area. Legal duties and contractual obligations may limit available cuts.
 
-This asks what you would protect; it does not assume reductions are required.
+### 10. If spending reductions were considered, which areas would you most want the district to protect? Choose up to three.
+
+Question ID: `bud_02`.
 
 Select up to 3.
 
@@ -358,11 +362,13 @@ Select up to 3.
 - Other
 - Not sure
 
-Select these choices only by themselves: Not sure.
+Choose alone: Not sure.
 
-### 30. Which approach to consolidation timing and scope would you most prefer?
+Help: This asks what you would protect; it does not assume reductions are required.
 
-Select one.
+### 11. Which approach to consolidation timing and scope would you most prefer?
+
+Question ID: `consol_timing`.
 
 - Proceed on the planned schedule
 - Close fewer buildings
@@ -372,7 +378,9 @@ Select one.
 - Another approach
 - Not sure
 
-### 31. If consolidation proceeds, which outcomes should take priority? Choose up to three.
+### 12. If consolidation proceeds, which outcomes should take priority? Choose up to three.
+
+Question ID: `consol_priorities`.
 
 Select up to 3.
 
@@ -389,9 +397,11 @@ Select up to 3.
 - Controlling renovation and transition costs
 - Not sure
 
-Select these choices only by themselves: Not sure.
+Choose alone: Not sure.
 
-### 32. Which evidence would most influence your opinion about consolidation? Choose up to three.
+### 13. Which evidence would most influence your opinion about consolidation? Choose up to three.
+
+Question ID: `evidence`.
 
 Select up to 3.
 
@@ -408,11 +418,11 @@ Select up to 3.
 - None would change my view
 - Not sure
 
-Select these choices only by themselves: None would change my view; Not sure.
+Choose alone: None would change my view; Not sure.
 
-### 33. How comfortable would you be with eighth graders attending Mentor High School if appropriate separation, scheduling and supports are provided?
+### 14. How comfortable would you be with eighth graders attending Mentor High School if appropriate separation, scheduling and supports are provided?
 
-Select one.
+Question ID: `eighth_grade`.
 
 - Very comfortable
 - Somewhat comfortable
@@ -420,34 +430,20 @@ Select one.
 - Very uncomfortable
 - Not sure
 
-### 34. Which statement best describes your current understanding of the levy and consolidation?
+### 15. Which statement best describes your current understanding of the levy and consolidation?
 
-This asks what you currently believe, not whether a statement is officially confirmed.
-
-Select one.
+Question ID: `levy_understanding`.
 
 - The levy means consolidation will no longer be necessary
 - Consolidation is still planned despite the levy
 - The final consolidation decision has not been made
 - I am unsure how the levy affects consolidation
 
-### 35. Mentor Public Schools provides a good return on your investment.
+Help: This asks what you currently believe, not whether a statement is officially confirmed.
 
-Original wording from the 2024 district survey.
+### 16. Mentor Public Schools provides a good return on your investment.
 
-Select one.
-
-- Strongly agree
-- Agree
-- Disagree
-- Strongly disagree
-- Not sure
-
-### 36. The school district spends money wisely.
-
-Original wording from the 2024 district survey.
-
-Select one.
+Question ID: `return_invest`.
 
 - Strongly agree
 - Agree
@@ -455,7 +451,23 @@ Select one.
 - Strongly disagree
 - Not sure
 
-### 37. Which financial information should the district explain more clearly? Choose up to three.
+Help: Original wording from the 2024 district survey.
+
+### 17. The school district spends money wisely.
+
+Question ID: `spends_wisely`.
+
+- Strongly agree
+- Agree
+- Disagree
+- Strongly disagree
+- Not sure
+
+Help: Original wording from the 2024 district survey.
+
+### 18. Which financial information should the district explain more clearly? Choose up to three.
+
+Question ID: `financial_details`.
 
 Select up to 3.
 
@@ -469,15 +481,13 @@ Select up to 3.
 - No additional information needed
 - Not sure
 
-Select these choices only by themselves: No additional information needed; Not sure.
+Choose alone: No additional information needed; Not sure.
 
 ## Section 3: Leadership and accountability
 
-Leadership, accountability and optional public records questions
+### 1. School leadership creates an environment that is trusting and open.
 
-### 38. School leadership creates an environment that is trusting and open.
-
-Select one.
+Question ID: `open_trust`.
 
 - Strongly agree
 - Agree
@@ -485,9 +495,9 @@ Select one.
 - Strongly disagree
 - Not sure
 
-### 39. How would you rate the district in engaging and responding to stakeholder needs?
+### 2. How would you rate the district in engaging and responding to stakeholder needs?
 
-Select one.
+Question ID: `stakeholder_response`.
 
 - Excellent
 - Good
@@ -495,20 +505,9 @@ Select one.
 - Poor
 - Not sure
 
-### 40. How much confidence do you have in the accuracy and completeness of public information from district leadership?
+### 3. How much confidence do you have in the accuracy and completeness of public information from district leadership?
 
-Select one.
-
-- 1 - No confidence
-- 2 - A little confidence
-- 3 - Some confidence
-- 4 - A lot of confidence
-- 5 - Complete confidence
-- Not enough information
-
-### 41. How much confidence do you have in the Board's independent oversight of district leadership?
-
-Select one.
+Question ID: `accuracy`.
 
 - 1 - No confidence
 - 2 - A little confidence
@@ -517,20 +516,9 @@ Select one.
 - 5 - Complete confidence
 - Not enough information
 
-### 42. How much confidence do you have that people who disagree with district leadership will be treated fairly?
+### 4. How much confidence do you have in the Board's independent oversight of district leadership?
 
-Select one.
-
-- 1 - No confidence
-- 2 - A little confidence
-- 3 - Some confidence
-- 4 - A lot of confidence
-- 5 - Complete confidence
-- Not enough information
-
-### 43. How much confidence do you have that the district will protect student and family information?
-
-Select one.
+Question ID: `board_oversight`.
 
 - 1 - No confidence
 - 2 - A little confidence
@@ -539,9 +527,31 @@ Select one.
 - 5 - Complete confidence
 - Not enough information
 
-### 44. How important is ethics and honest conduct in district leadership?
+### 5. How much confidence do you have that people who disagree with district leadership will be treated fairly?
 
-Select one.
+Question ID: `fairness`.
+
+- 1 - No confidence
+- 2 - A little confidence
+- 3 - Some confidence
+- 4 - A lot of confidence
+- 5 - Complete confidence
+- Not enough information
+
+### 6. How much confidence do you have that the district will protect student and family information?
+
+Question ID: `privacy_confidence`.
+
+- 1 - No confidence
+- 2 - A little confidence
+- 3 - Some confidence
+- 4 - A lot of confidence
+- 5 - Complete confidence
+- Not enough information
+
+### 7. How important is ethics and honest conduct in district leadership?
+
+Question ID: `ethics_important`.
 
 - 1 - Not at all important
 - 2 - Slightly important
@@ -550,9 +560,9 @@ Select one.
 - 5 - Extremely important
 - Not sure
 
-### 45. How well does district leadership currently demonstrate ethical conduct?
+### 8. How well does district leadership currently demonstrate ethical conduct?
 
-Select one.
+Question ID: `ethics_performance`.
 
 - 1 - Very poorly
 - 2 - Poorly
@@ -561,9 +571,9 @@ Select one.
 - 5 - Very well
 - Not enough information
 
-### 46. How important is transparent communication about district decisions and spending?
+### 9. How important is transparent communication about district decisions and spending?
 
-Select one.
+Question ID: `transparency_important`.
 
 - 1 - Not at all important
 - 2 - Slightly important
@@ -572,9 +582,9 @@ Select one.
 - 5 - Extremely important
 - Not sure
 
-### 47. How well does district leadership currently communicate transparently?
+### 10. How well does district leadership currently communicate transparently?
 
-Select one.
+Question ID: `transparency_performance`.
 
 - 1 - Very poorly
 - 2 - Poorly
@@ -583,9 +593,9 @@ Select one.
 - 5 - Very well
 - Not enough information
 
-### 48. How important is accountability for district actions and decisions?
+### 11. How important is accountability for district actions and decisions?
 
-Select one.
+Question ID: `accountability_important`.
 
 - 1 - Not at all important
 - 2 - Slightly important
@@ -594,9 +604,9 @@ Select one.
 - 5 - Extremely important
 - Not sure
 
-### 49. How well does district leadership currently demonstrate accountability?
+### 12. How well does district leadership currently demonstrate accountability?
 
-Select one.
+Question ID: `accountability_performance`.
 
 - 1 - Very poorly
 - 2 - Poorly
@@ -605,7 +615,9 @@ Select one.
 - 5 - Very well
 - Not enough information
 
-### 50. Which district processes have you personally used in the past 12 months? Select all that apply.
+### 13. Which district processes have you personally used in the past 12 months? Select all that apply.
+
+Question ID: `process_used`.
 
 Select up to 3.
 
@@ -615,11 +627,11 @@ Select up to 3.
 - None of these
 - Prefer not to answer
 
-Select these choices only by themselves: None of these; Prefer not to answer.
+Choose alone: None of these; Prefer not to answer.
 
-### 51. How satisfied were you with the handling of your most recent district question, records request or complaint?
+### 14. How satisfied were you with the handling of your most recent district question, records request or complaint?
 
-Select one.
+Question ID: `process_experience`.
 
 - Very dissatisfied
 - Dissatisfied
@@ -629,11 +641,12 @@ Select one.
 - Still pending
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Asked a question requiring a district response; Submitted a public records request; Submitted a formal complaint.
+Display rules (all listed conditions must hold):
+- process_used includes at least one of: Asked a question requiring a district response; Submitted a public records request; Submitted a formal complaint.
 
-### 52. When a complaint concerns senior district leadership, which review process would you prefer?
+### 15. When a complaint concerns senior district leadership, which review process would you prefer?
 
-Select one.
+Question ID: `complaint_review`.
 
 - District review, with the person involved excluded
 - Independent outside review
@@ -641,7 +654,9 @@ Select one.
 - Depends on the complaint
 - Not sure
 
-### 53. Which policies should the Board consider? Choose up to five.
+### 16. Which policies should the Board consider? Choose up to five.
+
+Question ID: `policy_prio`.
 
 Select up to 5.
 
@@ -659,52 +674,53 @@ Select up to 5.
 - None of these
 - Not sure
 
-Select these choices only by themselves: None of these; Not sure.
+Choose alone: None of these; Not sure.
 
-### 54. If an investigation establishes intentional, unauthorized alteration of an official record, what consequence should generally follow?
+### 17. If an investigation establishes intentional, unauthorized alteration of an official record, what consequence should generally follow?
 
-Select one.
+Question ID: `record_discipline`.
 
 - Termination consistent with applicable law and contracts
 - Significant discipline; termination based on seriousness
 - Individual corrective action or lesser discipline
 - Not sure
 
-### 55. What policy should govern former employees seeking sideline or restricted-area access?
+### 18. Employees whose employment with the district was terminated for substantiated serious misconduct should not be permitted access to sidelines, locker rooms, or other restricted areas at school-sponsored events.
 
-This concerns restricted areas, not ordinary public attendance.
+Question ID: `terminated_restricted_access`.
 
-Select one.
-
-- Same credential rules as everyone else
-- Access for approved media or event duties
-- Case-by-case review considering safety and purpose
-- No restricted-area access after substantiated serious misconduct
+- Strongly disagree
+- Somewhat disagree
+- Neither agree nor disagree
+- Somewhat agree
+- Strongly agree
 - Not sure
 
-### 56. Would you like to answer detailed questions about public records and access to district information?
+Help: This concerns restricted areas, not ordinary public attendance. Consider a proposed policy, not an assertion about a particular person.
 
-Select one.
+### 19. Former employees terminated for substantiated serious misconduct should only be permitted to attend school-sponsored events if a student who is an immediate family member is participating, subject to applicable safety restrictions and law.
+
+Question ID: `terminated_public_attendance`.
+
+- Strongly disagree
+- Somewhat disagree
+- Neither agree nor disagree
+- Somewhat agree
+- Strongly agree
+- Not sure
+
+Help: This concerns public attendance and is a separate policy proposal. Employment can end for reasons unrelated to misconduct.
+
+### 20. Would you like to answer detailed questions about public records and access to district information?
+
+Question ID: `prr_detail`.
 
 - Yes, I would like to answer these questions
 - No, skip this section
 
-### 57. Public access to school district records helps residents understand and evaluate district decisions.
+### 21. Public access to school district records helps residents understand and evaluate district decisions.
 
-Select one.
-
-- Strongly disagree
-- Somewhat disagree
-- Neither agree nor disagree
-- Somewhat agree
-- Strongly agree
-- Not enough information to answer
-
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
-
-### 58. I am concerned about the amount of staff time needed to respond to public records requests.
-
-Select one.
+Question ID: `prr_01a`.
 
 - Strongly disagree
 - Somewhat disagree
@@ -713,24 +729,12 @@ Select one.
 - Strongly agree
 - Not enough information to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 59. Public records requests should be handled consistently, regardless of who submits them or whether they agree with district leadership.
+### 22. I am concerned about the amount of staff time needed to respond to public records requests.
 
-Select one.
-
-- Strongly disagree
-- Somewhat disagree
-- Neither agree nor disagree
-- Somewhat agree
-- Strongly agree
-- Not enough information to answer
-
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
-
-### 60. Making commonly requested district records available online would improve public access.
-
-Select one.
+Question ID: `prr_01b`.
 
 - Strongly disagree
 - Somewhat disagree
@@ -739,11 +743,40 @@ Select one.
 - Strongly agree
 - Not enough information to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 61. If you needed information about a district decision, how comfortable would you feel submitting a public records request?
+### 23. Public records requests should be handled consistently, regardless of who submits them or whether they agree with district leadership.
 
-Select one.
+Question ID: `prr_01c`.
+
+- Strongly disagree
+- Somewhat disagree
+- Neither agree nor disagree
+- Somewhat agree
+- Strongly agree
+- Not enough information to answer
+
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+
+### 24. Making commonly requested district records available online would improve public access.
+
+Question ID: `prr_01d`.
+
+- Strongly disagree
+- Somewhat disagree
+- Neither agree nor disagree
+- Somewhat agree
+- Strongly agree
+- Not enough information to answer
+
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+
+### 25. If you needed information about a district decision, how comfortable would you feel submitting a public records request?
+
+Question ID: `prr_02`.
 
 - Very uncomfortable
 - Somewhat uncomfortable
@@ -753,9 +786,12 @@ Select one.
 - Not familiar enough with the process to say
 - Prefer not to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 62. Which improvements, if any, would make the district's public records process more useful to residents? Choose up to three.
+### 26. Which improvements, if any, would make the district's public records process more useful to residents? Choose up to three.
+
+Question ID: `prr_03`.
 
 Select up to 3.
 
@@ -769,11 +805,14 @@ Select up to 3.
 - No changes are needed
 - Not sure
 
-Select these choices only by themselves: No changes are needed; Not sure.
+Choose alone: No changes are needed; Not sure.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 63. If you have not submitted a public records request to Mentor Public Schools in the past 12 months, what are the main reasons? Choose up to two.
+### 27. If you have not submitted a public records request to Mentor Public Schools in the past 12 months, what are the main reasons? Choose up to two.
+
+Question ID: `prr_04`.
 
 Select up to 2.
 
@@ -787,15 +826,15 @@ Select up to 2.
 - Other
 - Prefer not to answer
 
-Select these choices only by themselves: I have not needed any records; Prefer not to answer.
+Choose alone: I have not needed any records; Prefer not to answer.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+- process_used does not include: Submitted a public records request.
 
-Do not show if any of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Submitted a public records request.
+### 28. Thinking about your most recent public records request to Mentor Public Schools in the past 12 months, which best describes the outcome so far?
 
-### 64. Thinking about your most recent public records request to Mentor Public Schools in the past 12 months, which best describes the outcome so far?
-
-Select one.
+Question ID: `prr_05`.
 
 - I received all the records I requested
 - I received some, but not all, of the records I requested
@@ -806,13 +845,13 @@ Select one.
 - I do not remember
 - Prefer not to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+- process_used includes at least one of: Submitted a public records request.
 
-Show only if at least one of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Submitted a public records request.
+### 29. For that request, were you given an expected timeframe or updates about when records would be available?
 
-### 65. For that request, were you given an expected timeframe or updates about when records would be available?
-
-Select one.
+Question ID: `prr_06`.
 
 - Yes, an estimated timeframe was provided
 - Yes, I received updates but no estimated timeframe
@@ -821,13 +860,13 @@ Select one.
 - I do not remember
 - Prefer not to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+- process_used includes at least one of: Submitted a public records request.
 
-Show only if at least one of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Submitted a public records request.
+### 30. Did the district withhold or redact any records in that request, and if so, did it explain why?
 
-### 66. Did the district withhold or redact any records in that request, and if so, did it explain why?
-
-Select one.
+Question ID: `prr_07`.
 
 - No records were withheld or redacted to my knowledge
 - Yes, and the reason was explained
@@ -837,11 +876,13 @@ Select one.
 - I do not remember
 - Prefer not to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+- process_used includes at least one of: Submitted a public records request.
 
-Show only if at least one of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Submitted a public records request.
+### 31. After submitting a public records request in the past 12 months, did you personally experience criticism or negative reactions related to making the request?
 
-### 67. After submitting a public records request in the past 12 months, did you personally experience criticism or negative reactions related to making the request?
+Question ID: `prr_08`.
 
 Select up to 6.
 
@@ -852,17 +893,15 @@ Select up to 6.
 - Not sure whether any reaction was related to the request
 - Prefer not to answer
 
-Select these choices only by themselves: No; Not sure whether any reaction was related to the request; Prefer not to answer.
+Choose alone: No; Not sure whether any reaction was related to the request; Prefer not to answer.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+- process_used includes at least one of: Submitted a public records request.
 
-Show only if at least one of the following answers is selected for "Which district processes have you personally used in the past 12 months? Select all that apply.": Submitted a public records request.
+### 32. In the past 12 months, have you personally seen people criticized for submitting public records requests to Mentor Public Schools?
 
-### 68. In the past 12 months, have you personally seen people criticized for submitting public records requests to Mentor Public Schools?
-
-This asks what you observed, not whether any public criticism was accurate.
-
-Select one.
+Question ID: `prr_09`.
 
 - Yes, I directly witnessed an interaction
 - Yes, I saw public comments or posts about a requester
@@ -870,9 +909,14 @@ Select one.
 - Not sure
 - Prefer not to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Help: This asks what you observed, not whether any public criticism was accurate.
 
-### 69. What information, if any, would help you assess how public records requests affect district resources? Choose up to three.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+
+### 33. What information, if any, would help you assess how public records requests affect district resources? Choose up to three.
+
+Question ID: `prr_10`.
 
 Select up to 3.
 
@@ -885,11 +929,14 @@ Select up to 3.
 - I do not need additional information
 - Not sure
 
-Select these choices only by themselves: I do not need additional information; Not sure.
+Choose alone: I do not need additional information; Not sure.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 70. What has most influenced your views about public records requests involving Mentor Public Schools? Choose up to two.
+### 34. What has most influenced your views about public records requests involving Mentor Public Schools? Choose up to two.
+
+Question ID: `prr_11`.
 
 Select up to 2.
 
@@ -903,31 +950,34 @@ Select up to 2.
 - I have not formed an opinion
 - Prefer not to answer
 
-Select these choices only by themselves: I have not formed an opinion; Prefer not to answer.
+Choose alone: I have not formed an opinion; Prefer not to answer.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 71. Which district records would you most like to be able to find online without submitting a request? Choose up to three.
+### 35. Other than financial records, which district records would you most like to find online without submitting a request? Choose up to three.
+
+Question ID: `prr_12`.
 
 Select up to 3.
 
 - Board decisions, meeting materials and supporting documents
-- Budgets, spending and financial reports
-- Contracts and district purchasing information
 - Policies and administrative procedures
-- Building and school planning reports
-- Staffing and compensation summaries
+- School planning reports unrelated to finances
+- Student safety and service policies
 - Public records request procedures and retention schedules
+- Other nonfinancial records
 - I do not need additional records published online
 - Not sure
 
-Select these choices only by themselves: I do not need additional records published online; Not sure.
+Choose alone: I do not need additional records published online; Not sure.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 72. Which types of spending related to public records requests do you consider appropriate uses of district funds? Select all that apply.
+### 36. Which types of spending related to public records requests do you consider appropriate uses of district funds? Select all that apply.
 
-Consider staff work, technology and legal services separately.
+Question ID: `prr_13`.
 
 Select up to 7.
 
@@ -939,13 +989,16 @@ Select up to 7.
 - None of these
 - Not sure
 
-Select these choices only by themselves: None of these; Not sure.
+Choose alone: None of these; Not sure.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Help: Consider staff work, technology and legal services separately.
 
-### 73. If a public records request leads to disagreement over what must be disclosed, which approaches should the district prioritize? Choose up to two.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-More than one approach can be taken in sequence.
+### 37. If a public records request leads to disagreement over what must be disclosed, which approaches should the district prioritize? Choose up to two.
+
+Question ID: `prr_14`.
 
 Select up to 2.
 
@@ -958,13 +1011,16 @@ Select up to 2.
 - It depends on the circumstances
 - Not sure
 
-Select these choices only by themselves: It depends on the circumstances; Not sure.
+Choose alone: It depends on the circumstances; Not sure.
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Help: More than one approach can be taken in sequence.
 
-### 74. The district should publicly report the total amount spent on outside attorneys handling public records disputes.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-Select one.
+### 38. The district should publicly report the total amount spent on outside attorneys handling public records disputes.
+
+Question ID: `prr_15`.
 
 - Strongly disagree
 - Somewhat disagree
@@ -973,24 +1029,12 @@ Select one.
 - Strongly agree
 - Not enough information to answer
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 75. When responding to a public records dispute, how important is: Estimated cost of litigation compared with resolving the request?
+### 39. When responding to a public records dispute, how important is: Estimated cost of litigation compared with resolving the request?
 
-Select one.
-
-- Not important
-- Slightly important
-- Moderately important
-- Very important
-- Extremely important
-- Not sure
-
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
-
-### 76. When responding to a public records dispute, how important is: Legal requirements to protect confidential or exempt information?
-
-Select one.
+Question ID: `prr_16_1`.
 
 - Not important
 - Slightly important
@@ -999,13 +1043,26 @@ Select one.
 - Extremely important
 - Not sure
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-### 77. If a court ultimately determines that requested district records should have been released, how acceptable is it that the requester had to file a legal complaint to obtain them?
+### 40. When responding to a public records dispute, how important is: Legal requirements to protect confidential or exempt information?
 
-This is a hypothetical question about a court finding, not an assertion about any existing dispute.
+Question ID: `prr_16_2`.
 
-Select one.
+- Not important
+- Slightly important
+- Moderately important
+- Very important
+- Extremely important
+- Not sure
+
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
+
+### 41. If a court ultimately determines that requested district records should have been released, how acceptable is it that the requester had to file a legal complaint to obtain them?
+
+Question ID: `prr_17`.
 
 - Very unacceptable
 - Somewhat unacceptable
@@ -1014,11 +1071,14 @@ Select one.
 - Very acceptable
 - Not sure
 
-Show only if the answer is for "Would you like to answer detailed questions about public records and access to district information?": Yes, I would like to answer these questions.
+Help: This is a hypothetical question about a court finding, not an assertion about any existing dispute.
 
-### 78. Would you support stronger protections against retaliation for people raising concerns about the district?
+Display rules (all listed conditions must hold):
+- prr_detail equals Yes, I would like to answer these questions.
 
-Select one.
+### 42. Would you support stronger protections against retaliation for people raising concerns about the district?
+
+Question ID: `retaliation_policy`.
 
 - Strongly oppose
 - Somewhat oppose
@@ -1029,11 +1089,9 @@ Select one.
 
 ## Section 4: Experiences and community priorities
 
-Family choices, school fees, services and community priorities
+### 1. Which best describes your current employment status?
 
-### 79. Which best describes your current employment status?
-
-Select one.
+Question ID: `employment`.
 
 - Working Full Time
 - Working Part Time
@@ -1044,22 +1102,9 @@ Select one.
 - Other
 - Prefer not to answer
 
-### 80. What is your annual personal income before taxes?
+### 2. What is your annual personal income before taxes?
 
-Select one.
-
-- Under $25,000
-- $25,000 - $49,999
-- $50,000 - $74,999
-- $75,000 - $99,999
-- $100,000 - $149,999
-- $150,000 - $199,999
-- $200,000 or more
-- Prefer not to answer
-
-### 81. What is your total annual household income before taxes?
-
-Select one.
+Question ID: `income_personal`.
 
 - Under $25,000
 - $25,000 - $49,999
@@ -1070,9 +1115,22 @@ Select one.
 - $200,000 or more
 - Prefer not to answer
 
-### 82. How many people currently live in your household, including yourself?
+### 3. What is your total annual household income before taxes?
 
-Select one.
+Question ID: `income_household`.
+
+- Under $25,000
+- $25,000 - $49,999
+- $50,000 - $74,999
+- $75,000 - $99,999
+- $100,000 - $149,999
+- $150,000 - $199,999
+- $200,000 or more
+- Prefer not to answer
+
+### 4. How many people currently live in your household, including yourself?
+
+Question ID: `household_size`.
 
 - 1
 - 2
@@ -1082,9 +1140,9 @@ Select one.
 - 6 or more
 - Prefer not to answer
 
-### 83. Do you own or rent your primary residence?
+### 5. Do you own or rent your primary residence?
 
-Select one.
+Question ID: `housing`.
 
 - Own
 - Rent
@@ -1092,7 +1150,9 @@ Select one.
 - Other
 - Prefer not to answer
 
-### 84. Which grade bands do your enrolled children attend? Select all that apply.
+### 6. Which grade bands do your enrolled children attend? Select all that apply.
+
+Question ID: `grade_bands`.
 
 Select up to 4.
 
@@ -1102,22 +1162,26 @@ Select up to 4.
 - Grades 9-12 or transition program
 - Prefer not to answer
 
-Select these choices only by themselves: Prefer not to answer.
+Choose alone: Prefer not to answer.
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student.
 
-### 85. Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?
+### 7. Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?
 
-Select one.
+Question ID: `mob_left`.
 
 - Yes
 - No
 - No child in my household has attended Mentor Public Schools during that period
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student; Parent or guardian of a former student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student; Parent or guardian of a former student.
 
-### 86. Where did the child or children continue their education after leaving Mentor Public Schools? Select all that apply.
+### 8. Where did the child or children continue their education after leaving Mentor Public Schools? Select all that apply.
+
+Question ID: `mob_03`.
 
 Select up to 8.
 
@@ -1130,13 +1194,14 @@ Select up to 8.
 - Not sure
 - Prefer not to answer
 
-Select these choices only by themselves: Not sure; Prefer not to answer.
+Choose alone: Not sure; Prefer not to answer.
 
-Show only if the answer is for "Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?": Yes.
+Display rules (all listed conditions must hold):
+- mob_left equals Yes.
 
-### 87. Thinking about your household's most recent decision to leave Mentor Public Schools, which factors mattered most? Choose up to three.
+### 9. Thinking about your household's most recent decision to leave Mentor Public Schools, which factors mattered most? Choose up to three.
 
-These are personal experiences and perceptions, not verified findings.
+Question ID: `mob_04`.
 
 Select up to 3.
 
@@ -1158,13 +1223,16 @@ Select up to 3.
 - No specific concern with Mentor Public Schools
 - Prefer not to answer
 
-Select these choices only by themselves: No specific concern with Mentor Public Schools; Prefer not to answer.
+Choose alone: No specific concern with Mentor Public Schools; Prefer not to answer.
 
-Show only if the answer is for "Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?": Yes.
+Help: These are personal experiences and perceptions, not verified findings.
 
-### 88. How much did your family's experience with Mentor Public Schools influence the decision to leave?
+Display rules (all listed conditions must hold):
+- mob_left equals Yes.
 
-Select one.
+### 10. How much did your family's experience with Mentor Public Schools influence the decision to leave?
+
+Question ID: `mob_05`.
 
 - Not at all
 - A little
@@ -1174,11 +1242,12 @@ Select one.
 - Not sure
 - Prefer not to answer
 
-Show only if the answer is for "Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?": Yes.
+Display rules (all listed conditions must hold):
+- mob_left equals Yes.
 
-### 89. If you chose a school or education option other than Mentor Public Schools without first enrolling your child in the district, what were the main reasons? Choose up to three.
+### 11. If you chose a school or education option other than Mentor Public Schools without first enrolling your child in the district, what were the main reasons? Choose up to three.
 
-For children who never attended the district. Please select only reasons relevant to your household.
+Question ID: `mob_06`.
 
 Select up to 3.
 
@@ -1196,36 +1265,25 @@ Select up to 3.
 - No particular concern with Mentor Public Schools
 - Prefer not to answer
 
-Select these choices only by themselves: No particular concern with Mentor Public Schools; Prefer not to answer.
+Choose alone: No particular concern with Mentor Public Schools; Prefer not to answer.
 
-Show only if at least one of the following answers is selected for "Which schooling options currently apply to school-age children in your household? Select all that apply.": A private or parochial school; Home education (homeschool); A public charter, community, or online school; A different public school district; Other.
+Help: For children who never attended the district. Please select only reasons relevant to your household.
 
-Show only if at least one of the following answers is selected for "Since the 2021-22 school year, has any child in your household left Mentor Public Schools to continue schooling elsewhere?": No child in my household has attended Mentor Public Schools during that period.
+Display rules (all listed conditions must hold):
+- mob_school_options includes at least one of: A private or parochial school; Home education (homeschool); A public charter, community, or online school; A different public school district; Other.
+- mob_left includes at least one of: No child in my household has attended Mentor Public Schools during that period.
 
-### 90. Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?
+### 12. Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?
 
-Select one.
+Question ID: `services_access`.
 
 - Yes
 - No
 - Prefer not to answer
 
-### 91. How would you rate the district in providing a safe learning environment?
+### 13. How would you rate the district in providing a safe learning environment?
 
-Select one.
-
-- Excellent
-- Good
-- Fair
-- Poor
-- Not sure
-- No direct experience
-
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
-
-### 92. How would you rate the district's approach to student discipline?
-
-Select one.
+Question ID: `student_safety`.
 
 - Excellent
 - Good
@@ -1234,24 +1292,12 @@ Select one.
 - Not sure
 - No direct experience
 
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
 
-### 93. How would you rate the district in accommodating students with disabilities and special needs?
+### 14. How would you rate the district's approach to student discipline?
 
-Select one.
-
-- Excellent
-- Good
-- Fair
-- Poor
-- Not sure
-- No direct experience
-
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
-
-### 94. How would you rate mental health support and counseling?
-
-Select one.
+Question ID: `student_discipline`.
 
 - Excellent
 - Good
@@ -1260,11 +1306,40 @@ Select one.
 - Not sure
 - No direct experience
 
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
 
-### 95. How satisfied are you with student transportation?
+### 15. How would you rate the district in accommodating students with disabilities and special needs?
 
-Select one.
+Question ID: `special_education`.
+
+- Excellent
+- Good
+- Fair
+- Poor
+- Not sure
+- No direct experience
+
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
+
+### 16. How would you rate mental health support and counseling?
+
+Question ID: `mental_health`.
+
+- Excellent
+- Good
+- Fair
+- Poor
+- Not sure
+- No direct experience
+
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
+
+### 17. How satisfied are you with student transportation?
+
+Question ID: `transportation`.
 
 - Very dissatisfied
 - Dissatisfied
@@ -1273,11 +1348,12 @@ Select one.
 - Very satisfied
 - Not applicable
 
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
 
-### 96. How satisfied are you with student fees and explanations of their use?
+### 18. How satisfied are you with student fees and explanations of their use?
 
-Select one.
+Question ID: `fees`.
 
 - Very dissatisfied
 - Dissatisfied
@@ -1286,9 +1362,12 @@ Select one.
 - Very satisfied
 - Not applicable
 
-Show only if the answer is for "Do you have direct experience with student services as a parent, guardian, adult student or employee this school year?": Yes.
+Display rules (all listed conditions must hold):
+- services_access equals Yes.
 
-### 97. During the 2026-27 school year, have school-related costs prevented or limited any child in your household from taking part in a school-sponsored activity or learning opportunity?
+### 19. During the 2026-27 school year, have school-related costs prevented or limited any child in your household from taking part in a school-sponsored activity or learning opportunity?
+
+Question ID: `fee_barrier`.
 
 Select up to 6.
 
@@ -1299,11 +1378,14 @@ Select up to 6.
 - Not sure
 - Prefer not to answer
 
-Select these choices only by themselves: No, cost has not limited participation; Not applicable; Not sure; Prefer not to answer.
+Choose alone: No, cost has not limited participation; Not applicable; Not sure; Prefer not to answer.
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student; Parent or guardian of a former student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student; Parent or guardian of a former student.
 
-### 98. Which costs made participation difficult? Select all that apply.
+### 20. Which costs made participation difficult? Select all that apply.
+
+Question ID: `fee_02`.
 
 Select up to 10.
 
@@ -1318,11 +1400,14 @@ Select up to 10.
 - Not sure
 - Prefer not to answer
 
-Select these choices only by themselves: Not sure; Prefer not to answer.
+Choose alone: Not sure; Prefer not to answer.
 
-Show only if at least one of the following answers is selected for "During the 2026-27 school year, have school-related costs prevented or limited any child in your household from taking part in a school-sponsored activity or learning opportunity?": Yes, a child missed at least one opportunity because of cost; Yes, a child participated in fewer opportunities than they wanted because of cost.
+Display rules (all listed conditions must hold):
+- fee_barrier includes at least one of: Yes, a child missed at least one opportunity because of cost; Yes, a child participated in fewer opportunities than they wanted because of cost.
 
-### 99. Which opportunities would your child have liked to pursue more if the costs were lower? Select all that apply.
+### 21. Which opportunities would your child have liked to pursue more if the costs were lower? Select all that apply.
+
+Question ID: `fee_03`.
 
 Select up to 10.
 
@@ -1337,15 +1422,14 @@ Select up to 10.
 - Not sure
 - Prefer not to answer
 
-Select these choices only by themselves: Not sure; Prefer not to answer.
+Choose alone: Not sure; Prefer not to answer.
 
-Show only if at least one of the following answers is selected for "During the 2026-27 school year, have school-related costs prevented or limited any child in your household from taking part in a school-sponsored activity or learning opportunity?": Yes, a child missed at least one opportunity because of cost; Yes, a child participated in fewer opportunities than they wanted because of cost.
+Display rules (all listed conditions must hold):
+- fee_barrier includes at least one of: Yes, a child missed at least one opportunity because of cost; Yes, a child participated in fewer opportunities than they wanted because of cost.
 
-### 100. Approximately how much has your household paid out of pocket for Mentor Public Schools fees and school-sponsored activities in the 2026-27 school year so far? Exclude property taxes.
+### 22. Approximately how much has your household paid out of pocket for Mentor Public Schools fees and school-sponsored activities in the 2026-27 school year so far? Exclude property taxes.
 
-Estimate year-to-date spending, including activity fees and required equipment. Exclude property taxes.
-
-Select one.
+Question ID: `fee_04`.
 
 - Nothing ($0)
 - $1-$99
@@ -1357,11 +1441,14 @@ Select one.
 - Not sure
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student.
+Help: Estimate year-to-date spending, including activity fees and required equipment. Exclude property taxes.
 
-### 101. If school activity fees and related costs were lower, would your child be more likely to participate in additional school-sponsored activities?
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student.
 
-Select one.
+### 23. If school activity fees and related costs were lower, would your child be more likely to participate in additional school-sponsored activities?
+
+Question ID: `fee_05`.
 
 - Definitely yes
 - Probably yes
@@ -1371,11 +1458,12 @@ Select one.
 - Not applicable
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student.
 
-### 102. How easy has it been to find the full cost of a school activity or course before signing up?
+### 24. How easy has it been to find the full cost of a school activity or course before signing up?
 
-Select one.
+Question ID: `fee_06`.
 
 - Very difficult
 - Somewhat difficult
@@ -1386,11 +1474,12 @@ Select one.
 - Not sure
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student.
 
-### 103. During the 2026-27 school year, have you looked for financial assistance, fee reductions, or payment options for school-related costs?
+### 25. During the 2026-27 school year, have you looked for financial assistance, fee reductions, or payment options for school-related costs?
 
-Select one.
+Question ID: `fee_07`.
 
 - Yes, and I found assistance or an option that helped
 - Yes, but I did not find an option that helped
@@ -1399,9 +1488,12 @@ Select one.
 - No, I did not look
 - Prefer not to answer
 
-Show only if at least one of the following answers is selected for "What is your connection to Mentor Public Schools? Select all that apply.": Parent or guardian of a currently enrolled student.
+Display rules (all listed conditions must hold):
+- connection includes at least one of: Parent or guardian of a currently enrolled student.
 
-### 104. Which should be the district's top priorities for the next three to five years? Select up to three.
+### 26. Which should be the district's top priorities for the next three to five years? Select up to three.
+
+Question ID: `future_prio`.
 
 Select up to 3.
 
@@ -1417,18 +1509,24 @@ Select up to 3.
 - Transparency and public trust
 - Not sure
 
-Select these choices only by themselves: Not sure.
+Choose alone: Not sure.
 
-### 105. What is the district doing well that should be preserved?
+### 27. What is the district doing well that should be preserved?
 
-Optional written response, up to 500 characters.
+Question ID: `preserve`.
 
-
-### 106. What should the district change first?
-
-Optional written response, up to 500 characters.
+Optional written response, maximum 500 characters.
 
 
-### 107. What single action would most improve your confidence in district leadership?
+### 28. What should the district change first?
 
-Optional written response, up to 500 characters.
+Question ID: `change`.
+
+Optional written response, maximum 500 characters.
+
+
+### 29. What single action would most improve your confidence in district leadership?
+
+Question ID: `confidence_action`.
+
+Optional written response, maximum 500 characters.

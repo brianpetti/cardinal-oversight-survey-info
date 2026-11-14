@@ -17,3 +17,5 @@ The community survey itself runs separately from this repository. Public summari
 This document does **not** claim that the live survey is fully anonymous, that no technical logs exist, or that all aspects of live data collection have been independently audited. The survey website's privacy notice should explain actual collection, retention, access, and logging practices after those practices have been verified.
 
 If you notice an error in the public documentation, contact Cardinal Oversight through its public website rather than submitting private personal information to GitHub.
+
+Public results are fixed aggregate releases, with small distributions withheld and no individual response rows or free-text responses. Downloading public Excel or CSV results never provides access to private survey export files. A separate civic participation information page does not collect names or signatures. The neutral share message never includes a survey response ID or the contents of a response.

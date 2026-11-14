@@ -13,11 +13,13 @@ This public repository provides **survey documentation**, not the software that 
 
 Survey: https://survey.cardinaloversight.com
 
+Public results: https://survey.cardinaloversight.com/results.php (published aggregate reports only).
+
 ## Independence and limitations
 
 Positive, negative, and mixed responses are welcome. Participation is voluntary. Survey results describe participating respondents; they are not a scientific sample of every district resident or voter. We will distinguish reported experiences and opinions from independently verified facts.
 
-The questionnaire file describes review version `2026-11-13-review2`. It includes the additional questions about budget priorities, school choice, participation costs and public records. It documents the questionnaire, not an independent audit of the running software. Review responses are not final survey results.
+The questionnaire file describes review version `2026-11-13-review3`. It includes the additional questions about budget priorities, school choice, participation costs and public records. It documents the questionnaire, not an independent audit of the running software. Review responses are not final survey results.
 
 ## What is not public here
 

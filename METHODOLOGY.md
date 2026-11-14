@@ -26,3 +26,7 @@ People with positive, negative, and mixed views are welcome. Some questions are 
 The wording in QUESTIONNAIRE.md is a published snapshot for review. It may not yet reflect proposed edits or the live form. Proposed changes should be documented before they are incorporated in live surveys. If wording changes during collection, report the version boundaries and analyze affected responses separately as appropriate.
 
 For ranked questions, publish first, second and third choices separately, with the appropriate count of respondents for each position. Review responses are for testing and should not be combined with official launch results.
+
+## Public results dashboard
+
+The review dashboard publishes fixed, administrator-approved releases for the current questionnaire version only. A release requires at least 20 responses; later releases require 20 additional responses and at least 24 hours. A question or rank position is withheld when fewer than 10 answered it, or any nonzero answer count or complementary count is below five. These safeguards reduce disclosure risk but are not a guarantee of anonymity. Public Excel and CSV downloads contain the same published aggregate counts, not respondent-level records. Review-period reports must be withdrawn before launch; official results must use a new version and exclude test responses. Optional civic-participation information is separate from the survey, and this version does not collect signatures.
