@@ -24,3 +24,5 @@ People with positive, negative, and mixed views are welcome. Some questions are 
 ## Public review
 
 The wording in QUESTIONNAIRE.md is a published snapshot for review. It may not yet reflect proposed edits or the live form. Proposed changes should be documented before they are incorporated in live surveys. If wording changes during collection, report the version boundaries and analyze affected responses separately as appropriate.
+
+For ranked questions, publish first, second and third choices separately, with the appropriate count of respondents for each position. Review responses are for testing and should not be combined with official launch results.

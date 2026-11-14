@@ -8,3 +8,10 @@
 - Not included: proposed follow-up questions awaiting deployment confirmation.
 
 This entry documents this local package, not a GitHub publication or a live survey deployment. Future entries should record any changes made after public release.
+
+## 2026-11-13 - Review question set update
+
+- Added budget reduction priorities and protections, school-choice follow-ups, fee affordability, and optional public records questions.
+- Documented choice limits and conditional display rules.
+- No school board structure or eligibility reform proposals were added.
+- Historical review responses should be kept separate from final launch results.

@@ -6,7 +6,7 @@ This public repository provides **survey documentation**, not the software that 
 
 ## What you can review
 
-- [Questionnaire](QUESTIONNAIRE.md): question wording and answer choices from the November 12, 2026 source snapshot.
+- [Questionnaire](QUESTIONNAIRE.md): question wording, answer choices and conditional display rules for the November 13, 2026 review update.
 - [Methodology](METHODOLOGY.md): how survey responses should be described and interpreted.
 - [Privacy and data disclosures](PRIVACY.md): what this repository does and does not contain.
 - [Public change log](CHANGELOG.md): updates to the published documents.
@@ -17,7 +17,7 @@ Survey: https://survey.cardinaloversight.com
 
 Positive, negative, and mixed responses are welcome. Participation is voluntary. Survey results describe participating respondents; they are not a scientific sample of every district resident or voter. We will distinguish reported experiences and opinions from independently verified facts.
 
-The questionnaire file is a **source snapshot**, not a certified export of the currently deployed questionnaire. It has not been compared against the live survey after recent proposed changes. Until that comparison, do not treat the file as a guarantee of the exact current on-screen questions.
+The questionnaire file describes review version `2026-11-13-review2`. It includes the additional questions about budget priorities, school choice, participation costs and public records. It documents the questionnaire, not an independent audit of the running software. Review responses are not final survey results.
 
 ## What is not public here
 
