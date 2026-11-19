@@ -28,3 +28,10 @@ This entry documents this local package, not a GitHub publication or a live surv
 - Updated consolidation questions to reflect the announced school closures and grade arrangements.
 - Added individual satisfaction ratings and retrospective levy communication, timing and perceived intent questions.
 - Retained existing public results privacy safeguards; prior review versions remain separate.
+
+## 2026-11-19 - Review version 5
+
+- Clarified awareness of the November 18 video and plan.
+- Added a separate question about the number of expected building closures before the levy election.
+- Retained the attributed plan summary and questions about perceptions of intent.
+- Earlier review responses and aggregate reports remain separate.

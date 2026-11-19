@@ -6,7 +6,7 @@ This public repository provides **survey documentation**, not the software that 
 
 ## What you can review
 
-- [Questionnaire](QUESTIONNAIRE.md): question wording, answer choices and conditional display rules for the November 18, 2026 review update.
+- [Questionnaire](QUESTIONNAIRE.md): question wording, answer choices and conditional display rules for the November 19, 2026 review update.
 - [Methodology](METHODOLOGY.md): how survey responses should be described and interpreted.
 - [Privacy and data disclosures](PRIVACY.md): what this repository does and does not contain.
 - [Public change log](CHANGELOG.md): updates to the published documents.
@@ -19,7 +19,7 @@ Public results: https://survey.cardinaloversight.com/results.php (published aggr
 
 Positive, negative, and mixed responses are welcome. Participation is voluntary. Survey results describe participating respondents; they are not a scientific sample of every district resident or voter. We will distinguish reported experiences and opinions from independently verified facts.
 
-The questionnaire file describes review version `2026-11-18-review4`. It includes feedback on the announced school closures, grade configurations, levy communications, and the perceived timing and intent of those communications, in addition to the prior review questions. It documents the questionnaire, not an independent audit of the running software. Review responses are not final survey results.
+The questionnaire file describes review version `2026-11-19-review5`. It includes feedback on the announced school closures, grade configurations, levy communications, and the perceived timing and intent of those communications, in addition to the prior review questions. It documents the questionnaire, not an independent audit of the running software. Review responses are not final survey results.
 
 ## What is not public here
 

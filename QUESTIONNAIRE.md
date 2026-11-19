@@ -1,6 +1,6 @@
 # Mentor Public Schools community survey - questionnaire
 
-Question set: 2026-11-18-review4. Every substantive question is optional. Review-period documentation; not an independent audit of the running software.
+Question set: 2026-11-19-review5. Every substantive question is optional. Review-period documentation; not an independent audit of the running software.
 
 Eligibility: Are you at least 18 years old and willing to participate? Yes, I am 18 or older / No.
 
@@ -86,7 +86,7 @@ Display rules (all listed conditions must hold):
 - registered equals Yes.
 - voted equals No.
 
-### 8. Thinking back to before the November 3, 2026 election, what did you understand would happen to school consolidation if Issue 5 passed?
+### 8. Before the November 3, 2026 election, did you expect any schools to close if Issue 5 passed?
 
 Question ID: `levy_pre_expectation`.
 
@@ -98,7 +98,22 @@ Question ID: `levy_pre_expectation`.
 - I do not remember
 - Prefer not to answer
 
-### 9. Overall, how would you rate the quality of education provided by Mentor Public Schools?
+### 9. Before the November 3, 2026 election, how many school buildings did you expect the district would close if Issue 5 passed?
+
+Question ID: `levy_expected_closure_count`.
+
+- None
+- 1 school
+- 2 schools
+- 3 schools
+- 4 schools
+- 5 or more schools
+- I expected closures but did not know how many
+- I did not know school closures were being considered
+- Not sure
+- Prefer not to answer
+
+### 10. Overall, how would you rate the quality of education provided by Mentor Public Schools?
 
 Question ID: `quality`.
 
@@ -110,7 +125,7 @@ Question ID: `quality`.
 
 Help: Uses the same wording and response scale as the 2024 district survey.
 
-### 10. How would you rate Craig Heath - Superintendent?
+### 11. How would you rate Craig Heath - Superintendent?
 
 Question ID: `leader_heath`.
 
@@ -121,7 +136,7 @@ Question ID: `leader_heath`.
 - 5 - Excellent
 - Not enough information
 
-### 11. How would you rate Maggie Cook - Board President?
+### 12. How would you rate Maggie Cook - Board President?
 
 Question ID: `leader_cook`.
 
@@ -132,7 +147,7 @@ Question ID: `leader_cook`.
 - 5 - Excellent
 - Not enough information
 
-### 12. How would you rate Lauren Marchaza - Board Vice President?
+### 13. How would you rate Lauren Marchaza - Board Vice President?
 
 Question ID: `leader_marchaza`.
 
@@ -143,7 +158,7 @@ Question ID: `leader_marchaza`.
 - 5 - Excellent
 - Not enough information
 
-### 13. How would you rate Daniel Hardesty - Board Member?
+### 14. How would you rate Daniel Hardesty - Board Member?
 
 Question ID: `leader_hardesty`.
 
@@ -154,7 +169,7 @@ Question ID: `leader_hardesty`.
 - 5 - Excellent
 - Not enough information
 
-### 14. How would you rate Robert Haag - Board Member?
+### 15. How would you rate Robert Haag - Board Member?
 
 Question ID: `leader_haag`.
 
@@ -165,16 +180,16 @@ Question ID: `leader_haag`.
 - 5 - Excellent
 - Not enough information
 
-### 15. Before taking this survey, were you aware of the consolidation plan announced on November 18, 2026?
+### 16. Have you watched Superintendent Craig Heath's November 18 video or heard about his newly announced school consolidation plan?
 
 Question ID: `plan_nov18_awareness`.
 
-- Yes, I knew the specific changes
-- Yes, but I did not know all the details
-- No
+- Yes, I watched the video
+- Yes, I heard about the plan but did not watch the video
+- No, I have not watched the video or heard about the plan
 - Not sure
 
-### 16. Overall, do you support or oppose the consolidation plan announced by Mentor Public Schools on November 18, 2026?
+### 17. Overall, do you support or oppose the consolidation plan announced by Mentor Public Schools on November 18, 2026?
 
 Question ID: `consolidation_support`.
 
@@ -189,7 +204,7 @@ Help: The district announced the following plan for 2027-28: Bellflower, Fairfax
 
 Source: https://www.mentorschools.net/apps/news/article/2257556?categoryId=14873
 
-### 17. In your opinion, how likely is it that Superintendent Craig Heath intentionally misled the community about the relationship between Issue 5 and school closures before the November 3 election?
+### 18. In your opinion, how likely is it that Superintendent Craig Heath intentionally misled the community about the relationship between Issue 5 and school closures before the November 3 election?
 
 Question ID: `levy_intent`.
 
@@ -205,7 +220,7 @@ Help: The district stated on July 22 that additional reductions would proceed re
 
 Source: https://www.mentorschools.net/apps/news/article/2227365?categoryId=14873
 
-### 18. How satisfied are you with the timing of the November 18 announcement of specific school closures, following the November 3 levy election?
+### 19. How satisfied are you with the timing of the November 18 announcement of specific school closures, following the November 3 levy election?
 
 Question ID: `levy_announcement_timing`.
 
@@ -216,7 +231,7 @@ Question ID: `levy_announcement_timing`.
 - Very satisfied
 - Not enough information to decide
 
-### 19. How confident are you that the district thoroughly evaluated reasonable cost-cutting alternatives before proposing school closures?
+### 20. How confident are you that the district thoroughly evaluated reasonable cost-cutting alternatives before proposing school closures?
 
 Question ID: `cost_efforts_confidence`.
 
@@ -227,7 +242,7 @@ Question ID: `cost_efforts_confidence`.
 - 5 - Complete confidence
 - Not enough information
 
-### 20. If some school buildings must close, which grade arrangement would you prefer?
+### 21. If some school buildings must close, which grade arrangement would you prefer?
 
 Question ID: `grade_config`.
 
@@ -237,7 +252,7 @@ Question ID: `grade_config`.
 
 Help: Select one if you have a preference. This hypothetical question does not mean closures are inevitable. You may skip it.
 
-### 21. If consolidation proceeds, how important is it that students stay with their current classmates and school communities when possible?
+### 22. If consolidation proceeds, how important is it that students stay with their current classmates and school communities when possible?
 
 Question ID: `school_community`.
 
@@ -248,7 +263,7 @@ Question ID: `school_community`.
 - 5 - Extremely important
 - Not sure
 
-### 22. Which schooling options currently apply to school-age children in your household? Select all that apply.
+### 23. Which schooling options currently apply to school-age children in your household? Select all that apply.
 
 Question ID: `mob_school_options`.
 
@@ -265,7 +280,7 @@ Select up to 8.
 
 Choose alone: No school-age children in household; Prefer not to answer.
 
-### 23. Where did you first find this survey?
+### 24. Where did you first find this survey?
 
 Question ID: `discovered`.
 
