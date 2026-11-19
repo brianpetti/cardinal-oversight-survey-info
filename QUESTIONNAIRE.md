@@ -1,6 +1,6 @@
 # Mentor Public Schools community survey - questionnaire
 
-Question set: 2026-11-13-review3. Every substantive question is optional. Review-period documentation; not an independent audit of the running software.
+Question set: 2026-11-18-review4. Every substantive question is optional. Review-period documentation; not an independent audit of the running software.
 
 Eligibility: Are you at least 18 years old and willing to participate? Yes, I am 18 or older / No.
 
@@ -86,7 +86,19 @@ Display rules (all listed conditions must hold):
 - registered equals Yes.
 - voted equals No.
 
-### 8. Overall, how would you rate the quality of education provided by Mentor Public Schools?
+### 8. Thinking back to before the November 3, 2026 election, what did you understand would happen to school consolidation if Issue 5 passed?
+
+Question ID: `levy_pre_expectation`.
+
+- I expected school closures would not happen
+- I expected closures might still happen
+- I expected closures would happen regardless of the levy result
+- I did not have a clear understanding at the time
+- I was not following the issue
+- I do not remember
+- Prefer not to answer
+
+### 9. Overall, how would you rate the quality of education provided by Mentor Public Schools?
 
 Question ID: `quality`.
 
@@ -98,7 +110,7 @@ Question ID: `quality`.
 
 Help: Uses the same wording and response scale as the 2024 district survey.
 
-### 9. How would you rate Craig Heath - Superintendent?
+### 10. How would you rate Craig Heath - Superintendent?
 
 Question ID: `leader_heath`.
 
@@ -109,7 +121,7 @@ Question ID: `leader_heath`.
 - 5 - Excellent
 - Not enough information
 
-### 10. How would you rate Maggie Cook - Board President?
+### 11. How would you rate Maggie Cook - Board President?
 
 Question ID: `leader_cook`.
 
@@ -120,7 +132,7 @@ Question ID: `leader_cook`.
 - 5 - Excellent
 - Not enough information
 
-### 11. How would you rate Lauren Marchaza - Board Vice President?
+### 12. How would you rate Lauren Marchaza - Board Vice President?
 
 Question ID: `leader_marchaza`.
 
@@ -131,7 +143,7 @@ Question ID: `leader_marchaza`.
 - 5 - Excellent
 - Not enough information
 
-### 12. How would you rate Daniel Hardesty - Board Member?
+### 13. How would you rate Daniel Hardesty - Board Member?
 
 Question ID: `leader_hardesty`.
 
@@ -142,7 +154,7 @@ Question ID: `leader_hardesty`.
 - 5 - Excellent
 - Not enough information
 
-### 13. How would you rate Robert Haag - Board Member?
+### 14. How would you rate Robert Haag - Board Member?
 
 Question ID: `leader_haag`.
 
@@ -153,7 +165,16 @@ Question ID: `leader_haag`.
 - 5 - Excellent
 - Not enough information
 
-### 14. Based on what you currently know, do you support or oppose the district's school consolidation plan?
+### 15. Before taking this survey, were you aware of the consolidation plan announced on November 18, 2026?
+
+Question ID: `plan_nov18_awareness`.
+
+- Yes, I knew the specific changes
+- Yes, but I did not know all the details
+- No
+- Not sure
+
+### 16. Overall, do you support or oppose the consolidation plan announced by Mentor Public Schools on November 18, 2026?
 
 Question ID: `consolidation_support`.
 
@@ -162,9 +183,40 @@ Question ID: `consolidation_support`.
 - Neither support nor oppose
 - Somewhat support
 - Strongly support
+- Not sure
+
+Help: The district announced the following plan for 2027-28: Bellflower, Fairfax and Sterling Morton would close; Hopkins, Lake, Orchard Hollow and Ridge would serve K-3; Shore and Memorial would serve grades 4-7; Mentor High would serve grades 8-12; preschool would move to Ridge. The district projects $3.4 million in annual savings and approximately 45 positions eliminated. These are district estimates and announced plans, not independently verified outcomes.
+
+Source: https://www.mentorschools.net/apps/news/article/2257556?categoryId=14873
+
+### 17. In your opinion, how likely is it that Superintendent Craig Heath intentionally misled the community about the relationship between Issue 5 and school closures before the November 3 election?
+
+Question ID: `levy_intent`.
+
+- Very likely
+- Somewhat likely
+- Neither likely nor unlikely
+- Somewhat unlikely
+- Very unlikely
+- Not enough information to judge
+- Prefer not to answer
+
+Help: The district stated on July 22 that additional reductions would proceed regardless of the levy outcome, with consolidation a likely option. Specific closures were announced November 18. This question asks for your perception of intent, not whether misconduct has been established.
+
+Source: https://www.mentorschools.net/apps/news/article/2227365?categoryId=14873
+
+### 18. How satisfied are you with the timing of the November 18 announcement of specific school closures, following the November 3 levy election?
+
+Question ID: `levy_announcement_timing`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
 - Not enough information to decide
 
-### 15. How confident are you that the district thoroughly evaluated reasonable cost-cutting alternatives before proposing school closures?
+### 19. How confident are you that the district thoroughly evaluated reasonable cost-cutting alternatives before proposing school closures?
 
 Question ID: `cost_efforts_confidence`.
 
@@ -175,7 +227,7 @@ Question ID: `cost_efforts_confidence`.
 - 5 - Complete confidence
 - Not enough information
 
-### 16. If some school buildings must close, which grade arrangement would you prefer?
+### 20. If some school buildings must close, which grade arrangement would you prefer?
 
 Question ID: `grade_config`.
 
@@ -185,7 +237,7 @@ Question ID: `grade_config`.
 
 Help: Select one if you have a preference. This hypothetical question does not mean closures are inevitable. You may skip it.
 
-### 17. If consolidation proceeds, how important is it that students stay with their current classmates and school communities when possible?
+### 21. If consolidation proceeds, how important is it that students stay with their current classmates and school communities when possible?
 
 Question ID: `school_community`.
 
@@ -196,7 +248,7 @@ Question ID: `school_community`.
 - 5 - Extremely important
 - Not sure
 
-### 18. Which schooling options currently apply to school-age children in your household? Select all that apply.
+### 22. Which schooling options currently apply to school-age children in your household? Select all that apply.
 
 Question ID: `mob_school_options`.
 
@@ -213,7 +265,7 @@ Select up to 8.
 
 Choose alone: No school-age children in household; Prefer not to answer.
 
-### 19. Where did you first find this survey?
+### 23. Where did you first find this survey?
 
 Question ID: `discovered`.
 
@@ -420,28 +472,153 @@ Select up to 3.
 
 Choose alone: None would change my view; Not sure.
 
-### 14. How comfortable would you be with eighth graders attending Mentor High School if appropriate separation, scheduling and supports are provided?
+### 14. How satisfied are you with the announced closure of Bellflower Elementary and the transfer of its K-3 attendance zone to Lake Elementary?
+
+Question ID: `close_bellflower`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 15. How satisfied are you with the announced closure of Fairfax Elementary and the transfer of its K-3 attendance zone to Hopkins Elementary?
+
+Question ID: `close_fairfax`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 16. How satisfied are you with the announced closure of Sterling Morton Elementary and the transfer of its K-3 attendance zone to Orchard Hollow Elementary?
+
+Question ID: `close_morton`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 17. How satisfied are you with the plan for the four remaining elementary schools to serve kindergarten through third grade?
+
+Question ID: `grade_k3`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 18. How satisfied are you with the plan for Shore and Memorial to serve grades 4 through 7?
+
+Question ID: `grade_4_7`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 19. How satisfied are you with the plan to move eighth graders to Mentor High School?
 
 Question ID: `eighth_grade`.
 
-- Very comfortable
-- Somewhat comfortable
-- Somewhat uncomfortable
-- Very uncomfortable
-- Not sure
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
 
-### 15. Which statement best describes your current understanding of the levy and consolidation?
+Help: The district says details about supervision, age separation, scheduling, lunch and transportation are still being worked out.
+
+### 20. How satisfied are you with moving the integrated preschool program to Ridge Elementary and ending use of the Garfield building?
+
+Question ID: `preschool_ridge`.
+
+- Very dissatisfied
+- Somewhat dissatisfied
+- Neither satisfied nor dissatisfied
+- Somewhat satisfied
+- Very satisfied
+- Not enough information to decide
+
+### 21. How confident are you that the announced consolidation will achieve the district's projected savings without reducing the quality of student services?
+
+Question ID: `consol_savings_confidence`.
+
+- 1 - No confidence
+- 2 - A little confidence
+- 3 - Some confidence
+- 4 - A lot of confidence
+- 5 - Complete confidence
+- Not enough information
+
+### 22. If the announced plan is implemented, how do you expect it to affect school-age children in your household overall?
+
+Question ID: `consol_family_impact`.
+
+- Very negatively
+- Somewhat negatively
+- No meaningful effect
+- Somewhat positively
+- Very positively
+- Too early to tell
+- No school-age children in my household
+- Prefer not to answer
+
+### 23. How clearly did district communications before the November 3 election explain that school closures could still occur if Issue 5 passed?
 
 Question ID: `levy_understanding`.
 
-- The levy means consolidation will no longer be necessary
-- Consolidation is still planned despite the levy
-- The final consolidation decision has not been made
-- I am unsure how the levy affects consolidation
+- Very unclearly
+- Somewhat unclearly
+- Neither clearly nor unclearly
+- Somewhat clearly
+- Very clearly
+- I did not see or hear district communications
+- I do not remember
+- Not enough information to judge
 
-Help: This asks what you currently believe, not whether a statement is officially confirmed.
+### 24. In your opinion, how likely is it that Superintendent Craig Heath deliberately delayed announcing the specific schools that would close until after the levy election in order to influence how people voted?
 
-### 16. Mentor Public Schools provides a good return on your investment.
+Question ID: `levy_delay_intent`.
+
+- Very likely
+- Somewhat likely
+- Neither likely nor unlikely
+- Somewhat unlikely
+- Very unlikely
+- Not enough information to judge
+- Prefer not to answer
+
+Help: The timing alone does not establish why the announcement was made on that date. Other explanations may include ongoing planning or information that was not yet available.
+
+### 25. Knowing what you know now about the November 18 plan, would you make the same choice on Issue 5 if you could vote again?
+
+Question ID: `levy_vote_revisit`.
+
+- Definitely the same choice
+- Probably the same choice
+- Not sure
+- Probably a different choice
+- Definitely a different choice
+- Prefer not to answer
+
+Display rules (all listed conditions must hold):
+- registered equals Yes.
+- voted equals Yes.
+- vote_actual includes at least one of: For the levy; Against the levy.
+
+### 26. Mentor Public Schools provides a good return on your investment.
 
 Question ID: `return_invest`.
 
@@ -453,7 +630,7 @@ Question ID: `return_invest`.
 
 Help: Original wording from the 2024 district survey.
 
-### 17. The school district spends money wisely.
+### 27. The school district spends money wisely.
 
 Question ID: `spends_wisely`.
 
@@ -465,7 +642,7 @@ Question ID: `spends_wisely`.
 
 Help: Original wording from the 2024 district survey.
 
-### 18. Which financial information should the district explain more clearly? Choose up to three.
+### 28. Which financial information should the district explain more clearly? Choose up to three.
 
 Question ID: `financial_details`.
 

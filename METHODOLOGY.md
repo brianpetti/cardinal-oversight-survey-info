@@ -30,3 +30,7 @@ For ranked questions, publish first, second and third choices separately, with t
 ## Public results dashboard
 
 The review dashboard publishes fixed, administrator-approved releases for the current questionnaire version only. A release requires at least 20 responses; later releases require 20 additional responses and at least 24 hours. A question or rank position is withheld when fewer than 10 answered it, or any nonzero answer count or complementary count is below five. These safeguards reduce disclosure risk but are not a guarantee of anonymity. Public Excel and CSV downloads contain the same published aggregate counts, not respondent-level records. Review-period reports must be withdrawn before launch; official results must use a new version and exclude test responses. Optional civic-participation information is separate from the survey, and this version does not collect signatures.
+
+## November 18 consolidation questions
+
+The November 18 announcement and July 22 financial-planning update are linked in the questionnaire. The plan and its financial estimates are attributed to the district. Respondents are asked to recall their pre-election understanding; recall can be imperfect. Responses about intent are perceptions, not findings of deception. Vote reconsideration is hypothetical and is asked only of respondents who report voting for or against Issue 5. Analyze this version separately from all earlier versions.

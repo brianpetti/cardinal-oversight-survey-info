@@ -22,3 +22,9 @@ This entry documents this local package, not a GitHub publication or a live surv
 - Replaced the prior general sideline question with two separate policy proposals about termination for substantiated serious misconduct.
 - Added a public aggregate results dashboard and Excel/CSV downloads, with release thresholds and small-count withholding.
 - Added a neutral completion badge, sharing controls and separate civic participation information; no signatures are collected.
+
+## 2026-11-18 - Review version 4
+
+- Updated consolidation questions to reflect the announced school closures and grade arrangements.
+- Added individual satisfaction ratings and retrospective levy communication, timing and perceived intent questions.
+- Retained existing public results privacy safeguards; prior review versions remain separate.
